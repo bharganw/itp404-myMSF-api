@@ -1,0 +1,43 @@
+QUestions:
+- Page specific CSS?
+- Delete not deleting
+- prevent creation without title
+- Component or helper could not be found with modal or basic dropdown thingy even had to import css file weirdly => DONE
+- Using datepicker
+- Calendar. If does not work, just ember google cal?
+- toastr
+
+DATEPICKER - make components
+
+	didInsertElement() {
+		this._super(...arguments);
+		this.$().datepicker({});
+	},
+
+//willDestroyElement() {
+	remove the listener
+}
+<!--<div class="input-group date" data-provide="datepicker">
+    <input type="text" class="form-control">
+    <div class="input-group-addon">
+        <span class="glyphicon glyphicon-th"></span>
+    </div>
+</div>-->
+
+take a picture of tests passing locally since travis will fail without api. send screenshot 
+
+Priority 1: 
+
+Announcements
+- Figure out why delete is not working instantly
+- Add update announcements to modals
+- Add any other attributes required for an announcement to the model/announcements.js file
+
+
+
+Priority 2:
+- Color alternate announcements
+- Change the requirements of the announcement model (i.e. make the relevant fields required)
+
+Dropdown
+https://github.com/cibernox/ember-basic-dropdown
